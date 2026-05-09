@@ -10,6 +10,9 @@
 		6D87C4672F9A75A4006D27CE /* QuizQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87C4662F9A759E006D27CE /* QuizQuestion.swift */; };
 		6D87C4692F9A75B4006D27CE /* QuizStepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87C4682F9A75A9006D27CE /* QuizStepViewModel.swift */; };
 		6D87C46B2F9A75C5006D27CE /* QuizResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87C46A2F9A75BE006D27CE /* QuizResultsViewModel.swift */; };
+		6D9EBACD2FAF5FB4005CAE10 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9EBACC2FAF5FB2005CAE10 /* NetworkClient.swift */; };
+		6D9EBACF2FAF608E005CAE10 /* MostPopularMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9EBACE2FAF608D005CAE10 /* MostPopularMovies.swift */; };
+		6D9EBAD12FAF60DE005CAE10 /* MoviesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9EBAD02FAF60DC005CAE10 /* MoviesLoader.swift */; };
 		6DD76EB62F9E2E0000F723AA /* QuestionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD76EB52F9E2DED00F723AA /* QuestionFactory.swift */; };
 		6DD76EB82F9E3B1000F723AA /* QuestionFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD76EB72F9E3B0800F723AA /* QuestionFactoryProtocol.swift */; };
 		6DD76EBA2F9E450600F723AA /* QuestionFactoryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD76EB92F9E450000F723AA /* QuestionFactoryDelegate.swift */; };
@@ -35,6 +38,9 @@
 		6D87C4662F9A759E006D27CE /* QuizQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestion.swift; sourceTree = "<group>"; };
 		6D87C4682F9A75A9006D27CE /* QuizStepViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizStepViewModel.swift; sourceTree = "<group>"; };
 		6D87C46A2F9A75BE006D27CE /* QuizResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultsViewModel.swift; sourceTree = "<group>"; };
+		6D9EBACC2FAF5FB2005CAE10 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		6D9EBACE2FAF608D005CAE10 /* MostPopularMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMovies.swift; sourceTree = "<group>"; };
+		6D9EBAD02FAF60DC005CAE10 /* MoviesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesLoader.swift; sourceTree = "<group>"; };
 		6DD76EB52F9E2DED00F723AA /* QuestionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFactory.swift; sourceTree = "<group>"; };
 		6DD76EB72F9E3B0800F723AA /* QuestionFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFactoryProtocol.swift; sourceTree = "<group>"; };
 		6DD76EB92F9E450000F723AA /* QuestionFactoryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFactoryDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +82,7 @@
 		611342392B701CF6003FC2A4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6D9EBACE2FAF608D005CAE10 /* MostPopularMovies.swift */,
 				6DD76EC12FA11F4A00F723AA /* GameResult.swift */,
 				6DD76EBB2F9F4D9D00F723AA /* AlertModel.swift */,
 				6D87C46A2F9A75BE006D27CE /* QuizResultsViewModel.swift */,
@@ -88,6 +95,8 @@
 		6113423A2B701CF8003FC2A4 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				6D9EBAD02FAF60DC005CAE10 /* MoviesLoader.swift */,
+				6D9EBACC2FAF5FB2005CAE10 /* NetworkClient.swift */,
 				6DD76EBF2FA11EEE00F723AA /* StatisticServiceProtocol.swift */,
 				6DD76EB92F9E450000F723AA /* QuestionFactoryDelegate.swift */,
 				6DD76EB72F9E3B0800F723AA /* QuestionFactoryProtocol.swift */,
@@ -245,8 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D9EBACD2FAF5FB4005CAE10 /* NetworkClient.swift in Sources */,
 				AD5EE5DE284D7887003966EF /* UIColor+Extensions.swift in Sources */,
 				AD7AFA552836189F00399704 /* Array+Extensions.swift in Sources */,
+				6D9EBACF2FAF608E005CAE10 /* MostPopularMovies.swift in Sources */,
 				6D87C46B2F9A75C5006D27CE /* QuizResultsViewModel.swift in Sources */,
 				6D87C4692F9A75B4006D27CE /* QuizStepViewModel.swift in Sources */,
 				6DD76EC02FA11EF000F723AA /* StatisticServiceProtocol.swift in Sources */,
@@ -262,6 +273,7 @@
 				6D87C4672F9A75A4006D27CE /* QuizQuestion.swift in Sources */,
 				6DD76EC42FA1240900F723AA /* StatisticService.swift in Sources */,
 				AD1ABAB42831907B00B3E448 /* SceneDelegate.swift in Sources */,
+				6D9EBAD12FAF60DE005CAE10 /* MoviesLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,7 +423,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = C7DVQD9JJ4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MovieQuiz/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -427,7 +439,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.practicum.MovieQuiz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DariaMarshunina.MovieQuizFligeli55.Neve;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -441,7 +453,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = C7DVQD9JJ4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MovieQuiz/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -457,7 +469,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.practicum.MovieQuiz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DariaMarshunina.MovieQuizFligeli55.Neve;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
