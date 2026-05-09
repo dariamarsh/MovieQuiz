@@ -29,8 +29,8 @@ final class StatisticService: StatisticServiceProtocol {
     }
     
     var totalAccuracy: Double {
-        totalQuestionsAsked > 0 ? 0 : Double(totalCorrectAnswers) / Double(totalQuestionsAsked) * 100
-    }
+            totalQuestionsAsked > 0 ? Double(totalCorrectAnswers) / Double(totalQuestionsAsked) * 100 : 0
+        }
     
     var gamesCount: Int {
         get {
